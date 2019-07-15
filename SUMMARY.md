@@ -10,7 +10,7 @@
 
 * [Application Patterns](Patterns.md)
 
-* [Multi-Document ACID Transactions](Transactions.md)
+* [多文档ACID事务](Transactions.md)
 
 * [Schema Design & Indexes](Schema.md)
 
