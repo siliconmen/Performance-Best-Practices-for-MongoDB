@@ -8,7 +8,7 @@
 
 * [Hardware](Hardware.md)
 
-* [Application Patterns](Patterns.md)
+* [应用程序模式](Patterns.md)
 
 * [多文档ACID事务](Multi-document-acid-transactions.md)
 
