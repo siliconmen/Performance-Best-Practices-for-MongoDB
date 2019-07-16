@@ -4,7 +4,7 @@
 
 * [绪论](Introduction.md)
 
-* [MongoDB Pluggable Storage Engines](Pluggable.md)
+* [可插拔的MongoDB存储引擎](Pluggable.md)
 
 * [Hardware](Hardware.md)
 
