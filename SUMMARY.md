@@ -12,7 +12,7 @@
 
 * [多文档ACID事务](Multi-document-acid-transactions.md)
 
-* [Schema Design & Indexes](Schema.md)
+* [架构设计与索引](Schema.md)
 
 * [Disk I/O](Disk.md)
 
