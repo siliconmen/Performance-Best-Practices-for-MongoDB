@@ -18,7 +18,7 @@
 
 * [Considerations for Benchmarks](Benchmarks.md)
 
-* [MongoDB Atlas: Database as a Service For MongoDB](Atlas.md)
+* [MongoDB Atlas: 数据即服务](Atlas.md)
 
 * [MongoDB Stitch: Backend as a Service](Stitch.md)
 

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>关于此书 · GitBook</title>
+        <title>可插拔的MongoDB存储引擎 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Introduction.html" />
+    <link rel="next" href="Hardware.md" />
     
+    
+    <link rel="prev" href="Introduction.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -113,7 +115,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="Pluggable.html">
+        <li class="chapter active" data-level="1.3" data-path="Pluggable.html">
             
                 <a href="Pluggable.html">
             
@@ -286,7 +288,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >关于此书</a>
+        <a href="." >可插拔的MongoDB存储引擎</a>
     </h1>
 </div>
 
@@ -301,9 +303,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mongodb&#x6027;&#x80FD;&#x4F18;&#x5316;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">MongoDB&#x6027;&#x80FD;&#x4F18;&#x5316;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h1>
-<p>&#x5B98;&#x65B9;&#x6587;&#x6863;&#x300A;Performance Best Practices for MongoDB&#x300B;&#x7684;&#x4E2D;&#x6587;&#x7248;</p>
-<p><a href="https://techboys.gitbook.io/performance-best-practices-for-mongodb/" target="_blank">Gitbook&#x5730;&#x5740;</a></p>
+                                <h1 id="&#x53EF;&#x63D2;&#x62D4;&#x7684;mongodb&#x5B58;&#x50A8;&#x5F15;&#x64CE;">&#x53EF;&#x63D2;&#x62D4;&#x7684;MongoDB&#x5B58;&#x50A8;&#x5F15;&#x64CE;</h1>
+<p>MongoDB&#x516C;&#x5F00;&#x4E86;&#x5B58;&#x50A8;&#x5F15;&#x64CE;API&#xFF0C;&#x4EE5;&#x652F;&#x6301;&#x53EF;&#x63D2;&#x62D4;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF08;&#x7ED9;MongoDB&#x5E26;&#x6765;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x7684;&#x65B0;&#x80FD;&#x529B;&#xFF09;&#x7684;&#x96C6;&#x6210;&#xFF0C;&#x5E76;&#x5B9E;&#x73B0;&#x7279;&#x5B9A;&#x786C;&#x4EF6;&#x67B6;&#x6784;&#x7684;&#x6700;&#x4F73;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x8D1F;&#x8F7D;&#x8981;&#x6C42;&#x3002; MongoDB&#x9644;&#x5E26;&#x591A;&#x4E2A;&#x652F;&#x6301;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#xFF1A;</p>
+<ul>
+<li>&#x9ED8;&#x8BA4;&#x7684;<strong>WiredTiger&#x5B58;&#x50A8;&#x5F15;&#x64CE;</strong>&#x3002;&#x5BF9;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x5E94;&#x7528;&#x800C;&#x8A00;&#xFF0C;WiredTiger&#x7684;&#x7C92;&#x5EA6;&#x5E76;&#x53D1;&#x63A7;&#x5236;(granular concurrency control)&#x548C;&#x672C;&#x5730;&#x538B;&#x7F29;(native compression)&#x4E3A;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x6700;&#x4F73;&#x7684;&#x7EFC;&#x5408;&#x6027;&#x80FD;&#x548C;&#x5B58;&#x50A8;&#x6548;&#x7387;&#x3002;</li>
+<li><strong>&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x5F15;&#x64CE;</strong>&#xFF0C;&#x53EF;&#x4FDD;&#x62A4;&#x9AD8;&#x5EA6;&#x654F;&#x611F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4E14;&#x65E0;&#x9700;&#x4E3A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x52A0;&#x5BC6;&#x4ED8;&#x51FA;&#x6027;&#x80FD;&#x6216;&#x7BA1;&#x7406;&#x5F00;&#x9500;&#x3002;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x57FA;&#x4E8E;WiredTiger&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x672C;&#x6587;&#x6863;&#x4E2D;&#xFF0C;&#x6709;&#x5173;WiredTiger&#x7684;&#x8BED;&#x53E5;&#x4E5F;&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;&#x8BE5;&#x5F15;&#x64CE;&#x662F;<a href="https://www.mongodb.com/products/mongodb-enterprise-advanced" target="_blank">MongoDB Enterprise Advanced</a>&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</li>
+<li><strong>&#x5185;&#x5B58;&#x5B58;&#x50A8;&#x5F15;&#x64CE;</strong>&#xFF0C;&#x53EF;&#x4E3A;&#x6700;&#x82DB;&#x523B;&#x7684;&#x5E94;&#x7528;&#x63D0;&#x4F9B;&#x53EF;&#x9884;&#x6D4B;&#x7684;&#x5EF6;&#x8FDF;&#x548C;&#x5B9E;&#x65F6;&#x5206;&#x6790;&#x3002;&#x8BE5;&#x5F15;&#x64CE;&#x662F;<a href="https://www.mongodb.com/products/mongodb-enterprise-advanced" target="_blank">MongoDB Enterprise Advanced</a>&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</li>
+<li><strong>MMAPv1&#x5B58;&#x50A8;&#x5F15;&#x64CE;</strong>&#xFF0C;&#x4EC5;&#x7528;&#x4E8E;&#x5411;&#x540E;&#x517C;&#x5BB9;&#x3002; MongoDB 4.0&#x7248;&#x672C;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x6B64;&#x5F15;&#x64CE;&#x3002;</li>
+</ul>
+<p>&#x4EFB;&#x4F55;&#x8FD9;&#x4E9B;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;MongoDB&#x526F;&#x672C;&#x96C6;&#x4E2D;&#x5171;&#x5B58;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x8BC4;&#x6D4B;&#x548C;&#x8FC1;&#x79FB;&#x3002;WiredTiger&#x662F;MongoDB&#x90E8;&#x7F72;&#x7684;&#x9ED8;&#x8BA4;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;&#x5982;&#x679C;&#x628A;&#x5176;&#x4ED6;&#x5F15;&#x64CE;&#x4F5C;&#x4E3A;&#x9996;&#x9009;&#xFF0C;&#x5219;&#x4F7F;&#x7528;<code>--storageEngine</code>&#x9009;&#x9879;&#x542F;&#x52A8;mongod&#x3002;&#x5982;&#x679C;&#x542F;&#x52A8;&#x4E86;3.2&#xFF08;&#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#xFF09;&#x7684;mongod&#x8FDB;&#x7A0B;&#x5E76;&#x4E14;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x5219;MongoDB&#x5C06;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x5E93;&#x521B;&#x5EFA;&#x65F6;&#x6307;&#x5B9A;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;</p>
+<p>&#x867D;&#x7136;&#x6BCF;&#x4E2A;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x90FD;&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x8FDB;&#x884C;&#x4E86;&#x4F18;&#x5316;&#xFF0C;&#x4F46;&#x7528;&#x6237;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x540C;MongoDB&#x67E5;&#x8BE2;&#x8BED;&#x8A00;&#xFF0C;&#x6570;&#x636E;&#x6A21;&#x578B;&#xFF0C;&#x6269;&#x5C55;&#xFF0C;&#x5B89;&#x5168;&#x6027;&#x548C;&#x64CD;&#x4F5C;&#x5DE5;&#x5177;(&#x8FD9;&#x4E0E;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x5F15;&#x64CE;&#x65E0;&#x5173;)&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x672C;&#x6307;&#x5357;&#x4E2D;&#x7684;&#x5927;&#x591A;&#x6570;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;(MongoDB&#x652F;&#x6301;&#x7684;)&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x3002;&#x4E0D;&#x540C;&#x5B58;&#x50A8;&#x5F15;&#x64CE;(&#x4F7F;&#x7528;)&#x5EFA;&#x8BAE;&#x4E0A;&#x7684;&#x4EFB;&#x4F55;&#x5DEE;&#x5F02;&#x90FD;&#x5C06;&#x88AB;&#x8BB0;&#x5F55;&#x3002;</p>
 
                                 
                                 </section>
@@ -331,8 +340,12 @@
 
             
                 
+                <a href="Introduction.html" class="navigation navigation-prev " aria-label="Previous page: 绪论">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="Introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 绪论">
+                
+                <a href="Hardware.md" class="navigation navigation-next " aria-label="Next page: Hardware">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -343,7 +356,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"关于此书","level":"1.1","depth":1,"next":{"title":"绪论","level":"1.2","depth":1,"path":"Introduction.md","ref":"Introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-07-15T14:37:30.495Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-07-20T09:13:21.999Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"可插拔的MongoDB存储引擎","level":"1.3","depth":1,"next":{"title":"Hardware","level":"1.4","depth":1,"path":"Hardware.md","ref":"Hardware.md","articles":[]},"previous":{"title":"绪论","level":"1.2","depth":1,"path":"Introduction.md","ref":"Introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Pluggable.md","mtime":"2019-07-20T08:49:33.578Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-07-20T09:13:21.999Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
