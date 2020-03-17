@@ -6,13 +6,13 @@
 
 * [可插拔的MongoDB存储引擎](Pluggable.md)
 
-* [Hardware](Hardware.md)
+* [硬件](Hardware.md)
 
 * [应用程序模式](Patterns.md)
 
 * [多文档ACID事务](Multi-document-acid-transactions.md)
 
-* [Schema Design & Indexes](Schema.md)
+* [数据结构设计与索引](Schema.md)
 
 * [Disk I/O](Disk.md)
 
