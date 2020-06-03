@@ -14,16 +14,16 @@
 
 * [数据结构设计与索引](Schema.md)
 
-* [Disk I/O](Disk.md)
+* [磁盘I/O](Disk.md)
 
-* [Considerations for Benchmarks](Benchmarks.md)
+* [基准的考量](Benchmarks.md)
 
 * [MongoDB Atlas: 数据即服务](Atlas.md)
 
-* [MongoDB Stitch: Backend as a Service](Stitch.md)
+* [MongoDB Stitch: 后端即服务](Stitch.md)
 
-* [We Can Help](Help.md)
+* [关于MongoDB支持](Help.md)
 
-* [Resources](Resources.md)
+* [资源](Resources.md)
 
 
